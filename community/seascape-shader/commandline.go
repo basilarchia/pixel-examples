@@ -27,8 +27,9 @@ var customUsage = func() {
 	flag.PrintDefaults()
 
 	fmt.Println("")
-	fmt.Println("EXAMPLE:")
+	fmt.Println("EXAMPLES:")
 	fmt.Println("")
+	fmt.Println("seascape-shader --width 1024 --height 768 --drift .1 --filename shaders/seascape.glsl")
 	fmt.Println("seascape-shader --width 640 --height 480 --filename shaders/planetfall.glsl")
 	fmt.Println("")
 }
@@ -54,11 +55,6 @@ func parseFlags() {
 	} else {
 		log.Println("Parsed() failed. width=",width)
 	}
-
-//	if err := flag.Parse(); err != nil {
-//		log.Println("Example:",width)
-//	}
-		
 
 	uDrift = float32(tmp)
 	log.Println("width=",width)
