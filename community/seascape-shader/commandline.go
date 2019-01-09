@@ -29,8 +29,8 @@ var customUsage = func() {
 	fmt.Println("")
 	fmt.Println("EXAMPLES:")
 	fmt.Println("")
-	fmt.Println("seascape-shader --width 1024 --height 768 --drift .1 --filename shaders/seascape.glsl")
-	fmt.Println("seascape-shader --width 640 --height 480 --filename shaders/planetfall.glsl")
+	fmt.Println(os.Args[0] + " --width 1024 --height 768 --drift .1 --filename shaders/seascape.glsl")
+	fmt.Println(os.Args[0] + " --width 640 --height 480 --filename shaders/planetfall.glsl")
 	fmt.Println("")
 }
 

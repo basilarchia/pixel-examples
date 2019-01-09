@@ -72,6 +72,7 @@ func run() {
 }
 
 func main() {
+	// This parses the command line arguments
 	parseFlags()
 
 	pixelgl.Run(run)
